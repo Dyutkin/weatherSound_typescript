@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg" id="bg"></div>
+    <div class="content">
+        <h1 class="title">Weather sounds</h1>
+        <div class="tiles">
+            <div class="tile-wrapper">
+                <div class="tile sun" id="summer">
+                    <img src="assets/icons/sun.svg" class="" />
+                </div>
+                <div class="tile rain" id="rainy">
+                    <img src="assets/icons/cloud-rain.svg" />
+                </div>
+                <div class="tile snow" id="winter">
+                    <img src="/assets/icons/cloud-snow.svg" />
+                </div>
+            </div>
+        </div>
+        <input type="range" id="volume" name="volume" min="0" max="100" step="1" value="100">
+        <audio id="sound" src="" type="audio/mp3" autoplay loop></audio>
+    </div>
+
+
+</body>
+</html>

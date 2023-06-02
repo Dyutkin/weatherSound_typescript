@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+.bg {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  position: fixed;
+  filter: blur(5px);
+  background-size: cover;
+  z-index: 1;
+  }
+
+  body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .content {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    padding-top: 10vh;
+    text-align: center;
+  }
+
+  .title {
+    text-align: center;
+    color: orangered;
+  }
+
+  .tiles {
+    padding: 20px 0 20px 0;
+    min-height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tile-wrapper {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tile {
+    height: 150px;
+    width: 150px;
+    margin: 0 15px 0 15px;
+    border-radius: 30px;
+    border: 2px solid gray;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tile:hover {
+    border: 3px solid  rgb(207, 207, 214);
+    border-radius: 20px;
+    cursor:pointer;
+    opacity: 0.9;
+
+  }
+
+  .tile.sun {
+    background: url(./assets/summer-bg.jpg);
+    background-size: cover;
+  }
+
+  .tile.rain {
+    background: url(./assets/rainy-bg.jpg);
+    background-size: cover;
+  }
+
+  .tile.snow {
+    background: url(./assets/winter-bg.jpg);
+    background-size: cover;
+  }
+
+  .tile img {
+    width: 20%;
+    height: 20%;
+  }
+
